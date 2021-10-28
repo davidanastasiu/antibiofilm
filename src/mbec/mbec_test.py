@@ -19,7 +19,7 @@ from sklearn.decomposition import PCA
 #                               Variables
 # ------------------------------------------------------------------------------
 training_filename = '../../data/mbec_training_data.csv'
-test_filename = '../../data/mbec_test_data.csv'
+test_filename = '../../data/test_peptide_data.csv'
 fs_filename = 'forward_selection_features.json'    # Features chosen using Forward Selection
 pred_filename = './mbec_predictions.csv'
 

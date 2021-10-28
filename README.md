@@ -13,3 +13,15 @@ antibiofilm peptides, and a negative dataset which, unlike previous datasets, co
 likely to promote biofilm formation. We utilized our classification-regression pipeline to evaluate 135,015 
 peptides from diverse sources and identified antibiofilm peptide candidates that are efficacious against 
 preformed biofilms at micromolar concentration.
+
+MBIC/MBEC code:
+
+Two independent models were developed in order to predict the minimum inhibitory/eradication
+concentration (MBIC/MBEC) of unknown antibiofilm peptides. The MBIC model uses an SVM to split the
+peptides first, applying an SVR to predicted peptides that are less than 64uM. The MBEC model directly
+trains an SVR on the MBEC peptides. Please see the paper for more details.
+Both the MBIC and MBEC folders contain source code to train the models which sweep through different
+hyperparameters and perform forward selection. Both folders contain the optimized features found during 
+forward selection (.json file) and a script that uses the found hyperparameters/features to make predictions 
+about unknown peptides. The MBIC folder contains an additional script that combines both the tuned SVM 
+and SVR which are then used to perform cross-validation and return an average RMSE of the model. 
