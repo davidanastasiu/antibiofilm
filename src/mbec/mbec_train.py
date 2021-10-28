@@ -42,7 +42,6 @@ def main():
     for n in range(0, num_features + 1):
         print('\nFeatures: ' + str(n))
         peptides = pd.read_csv('../../data/mbec_training_data.csv')
-        #peptides = pd.read_csv('57MBEC_peptides_with_features_reduced2.csv')
         peptides = peptides.drop(columns=['Name', 'Seq'])
         labels = peptides.columns.values.tolist()
         labels.remove('MBEC(uM)')
