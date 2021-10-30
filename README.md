@@ -1,6 +1,6 @@
-# Paper Title: Identification of distinct characterisitcs of antibiofilm peptides and prospection of diverse sources for efficacious sequences
+# Identification of distinct characterisitcs of antibiofilm peptides and prospection of diverse sources for efficacious sequences
 
-This respository contains the data and code associated with the paper found [here](https://biorxiv.org/cgi/content/short/2021.09.28.462235v1) 
+This respository contains data and code associated with the paper found [here](https://biorxiv.org/cgi/content/short/2021.09.28.462235v1) 
 
 ## Authors 
 
